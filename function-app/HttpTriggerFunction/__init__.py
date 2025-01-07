@@ -17,6 +17,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(f"Hello, {name}!")
     else:
         return func.HttpResponse(
-            "Please pass a name on the query string or in the request body",
+            "Please pass the name as a quary parameter",
             status_code=400
         )
